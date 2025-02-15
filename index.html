@@ -42,14 +42,16 @@
         }
         .board {
             display: grid;
-            grid-template-columns: repeat(3, 100px);
-            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, minmax(80px, 1fr));
+            grid-template-rows: repeat(3, minmax(80px, 1fr));
             gap: 5px;
             background-color: black;
             padding: 10px;
+            width: 90vw;
+            max-width: 300px;
         }
         .cell {
-            width: 100px;
+            width: 100%;
             height: 100px;
             display: flex;
             justify-content: center;
@@ -66,6 +68,7 @@
             font-size: 24px;
             font-weight: bold;
             color: white;
+            text-align: center;
         }
         .restart-button {
             margin-top: 20px;
@@ -158,4 +161,5 @@
     <script type="text/javascript" src="//www.highperformanceformat.com/4d5e38f8da66e6c984f3122eb94201b3/invoke.js"></script>
 </body>
 </html>
+
 
